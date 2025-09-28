@@ -39,11 +39,11 @@
             return parts;
         }
         Promise.all([
-            mergeFiles(getParts("/WarpDriveCO/SlopePlus/Build/WEB1.2.1.data.unityweb", 1, 2))
+            mergeFiles(getParts("/WarpDriveCO/BikeRacer/Build//bike.data.unityweb", 1, 2))
         ]).then(([dataUrl]) => {
             let json = {
                 companyName: "WarpStarGames",
-                productName: "WarpSlope",
+                productName: "BikeRacer",
                 dataUrl: buildUrl + "/bike.data.unityweb",
                codeUrl: buildUrl + "/bike.wasm.unityweb",
                 frameworkUrl: buildUrl + "/bike.framework.js.unityweb",
